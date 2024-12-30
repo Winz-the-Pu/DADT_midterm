@@ -1,0 +1,74 @@
+/* General styles for the body */
+body {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Background image styling */
+    background: url('../assets/index_page.jpg') no-repeat center center fixed;
+    background-size: contain; /* Fit the image without stretching */
+    background-color: #ffffff; /* Black background for extra space */
+}
+
+/* Header container styles */
+header {
+    position: fixed; /* Sticks header to the top */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensures it's above everything else */
+    letter-spacing: 3px;
+}
+
+/* Header box styling */
+.header-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    color: #ffffff; /* White text */
+    padding: 40px 0;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Content styling */
+.content {
+    margin-top: 250px; /* Adjust to move content below the header */
+}
+
+/* Link container styling */
+.link-container {
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 50px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.link-container p {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.link-container a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link-container a:hover {
+    color: #ffffff;
+}

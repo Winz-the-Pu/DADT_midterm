@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../assets/q5_page.jpg') no-repeat center center fixed;
+    background-size: contain; /* Ensure the background fits without stretching */
+    background-color: #ffffff; /* Add white below the image */
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Take up the remaining space below the header */
+    width: 100%;
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in dimensions */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px; /* Limit the box width */
+    width: 90%; /* Fit smaller screens */
+    text-align: center;
+}
+
+canvas {
+    max-width: 100%; /* Ensure it resizes on smaller screens */
+    height: auto;
+}
